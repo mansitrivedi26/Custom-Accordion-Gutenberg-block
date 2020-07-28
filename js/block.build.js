@@ -517,11 +517,11 @@ registerBlockType('gca/accordion', {
             wp.element.createElement(
                 "div",
                 { className: "accordionHeader" },
-                wp.element.createElement(
-                    "h4",
-                    { style: { fontSize: headerTextFontSize, textAlign: alignment, color: headerTextColor, backgroundColor: titleBackgroundColor, paddingTop: titlePaddingTop + 'px', paddingRight: titlePaddingRight + 'px', paddingBottom: titlePaddingBottom + 'px', paddingLeft: titlePaddingLeft + 'px' } },
-                    title
-                )
+                wp.element.createElement(RichText.Content, {
+                    tagName: "h4",
+                    value: attributes.title,
+                    style: { fontSize: headerTextFontSize, textAlign: alignment, color: headerTextColor, backgroundColor: titleBackgroundColor, paddingTop: titlePaddingTop + 'px', paddingRight: titlePaddingRight + 'px', paddingBottom: titlePaddingBottom + 'px', paddingLeft: titlePaddingLeft + 'px' }
+                })
             ),
             wp.element.createElement(
                 "div",
@@ -562,7 +562,18 @@ registerBlockType('gca/accordion', {
             var titlePaddingTop = attributes.titlePaddingTop,
                 titlePaddingRight = attributes.titlePaddingRight,
                 titlePaddingBottom = attributes.titlePaddingBottom,
-                titlePaddingLeft = attributes.titlePaddingLeft;
+                titlePaddingLeft = attributes.titlePaddingLeft,
+                borderWidth = attributes.borderWidth,
+                borderType = attributes.borderType,
+                borderColor = attributes.borderColor,
+                borderRadius = attributes.borderRadius,
+                headerTextFontSize = attributes.headerTextFontSize,
+                alignment = attributes.alignment,
+                headerTextColor = attributes.headerTextColor,
+                titleBackgroundColor = attributes.titleBackgroundColor,
+                title = attributes.title,
+                bodyBgColor = attributes.bodyBgColor,
+                bodyTextColor = attributes.bodyTextColor;
 
             var tabOpen = open ? 'tabOpen' : 'tabClose';
             var bodyDisplay = open ? 'block' : 'none';

@@ -1,10 +1,10 @@
-=== Gutenberg Custom Accordion ===
-Contributors: mansi_trivedi
+=== Custom Accordion Block ===
+Contributors: mansi-trivedi
 Tags: Gutenberg Custom Accordion, Gutenberg Custom Block, Gutenberg Block, FAQ, Custom FAQ
 Requires at least: 5.0
-Tested up to: 5.2.4
+Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,12 @@ This block is very easy to use. It will allow you to add N number of accordion t
 
 == Changelog ==
 
+= 1.2 =
+*Release Date - 10 MAY 2020*
+
+* Added new design attribut to block
+* Editor panel design improved
+
 = 1.1 =
 *Release Date - 11 NOV 2019*
 
@@ -35,3 +41,5 @@ This block is very easy to use. It will allow you to add N number of accordion t
 == Screenshots ==
 1. Screenshot 1
 2. Screenshot 2
+3. Screenshot 3
+4. Screenshot 4

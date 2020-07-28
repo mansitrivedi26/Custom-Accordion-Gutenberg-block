@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Gutenberg Custom Accordion
-Description: This is Gutenberg compitable pluginn which will add Custom Accordion Block to your site. This Accordion block will allow you to design your accordion by providing custom CSS settings.
-Author: mansi_trivedi
-Version: 1.1
+Plugin Name: Custom Accordion Block
+Description: This is Accordion block plugin which will add Custom Accordion Block to your site. This Accordion block will allow you to design your accordion by providing custom CSS settings.
+Author: mansi-trivedi
+Version: 1.2
 Author URI: https://profiles.wordpress.org/mansi-trivedi
 Text Domain: gca
 */
@@ -14,7 +14,7 @@ Text Domain: gca
  */
 defined( 'ABSPATH' ) || exit;
 if( !defined('gca_version') ) {
-	define( 'gca_version', '1.1' ); // Plugin version
+	define( 'gca_version', '1.2' ); // Plugin version
 }
 if( !defined('gca_plugin_path') ) {
 	define( 'gca_plugin_path', plugin_dir_url(__FILE__) ); // Plugin version
